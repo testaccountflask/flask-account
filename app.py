@@ -43,7 +43,11 @@ b = ch.Savereturn()
 # print(*b[6::])
 
 app = Flask(__name__)
-CORS(app, origin='http://localhost:3000/')
+# CORS(app, origin='http://localhost:3000/')
+app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 @app.route('/upload', methods=['POST'])
 def get_answer():
     answer = request.json['answer']
