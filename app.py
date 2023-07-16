@@ -6,7 +6,7 @@ import openai
 class ChatApp:
     def __init__(self):
         # Setting the API key to use the OpenAI API
-        openai.api_key = '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'
+        openai.api_key = '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'
         self.messages = [
             {"role": "system", "content": "you are an effective HR executive capable of seeking specific actionable feedback from employees by asking them questions and asking follow-up questions when employee answers are too vague."},
             {"role": "assistant", "content": "Do you have any feedback to give"},
